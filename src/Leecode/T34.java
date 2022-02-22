@@ -1,42 +1,43 @@
 package Leecode;
 
+import java.util.Arrays;
+
 public class T34 {
 	public static void main(String[] args) {
-		int[] nums = new int[]{6};
-		int target = 6;
-		int[] res = new T34().searchRange(nums, target);
-		for (int i = 0; i < res.length; i++) {
-			System.out.println(res[i]);
-		}
+		int[] num = new int[]{1,1,3,3,6,6,6,6,6,8};
+		searchRange(num, 6);
 	}
 
-	public int[] searchRange(int[] nums, int target) {
-		int end = 0;
-		int begin = 0;
-		int res2[] = new int[]{-1, -1};
-
-		int j = 0;
-		for (int i = 0; i < nums.length; i++) {
-			if (nums[i] == target) {
-				begin = i;
-				break;
+	public static int[] searchRange(int[] nums, int target) {
+		int l = 0;
+		int r = nums.length - 1;
+		if (r == -1) {
+			return new int[]{-1, -1};
+		}
+		while (l < r) {
+			int mid = l + (r - l) / 2;
+			if (nums[mid] < target) {
+				l = mid + 1;
+			} else if (nums[mid] > target) {
+				r = mid - 1;
+			} else {
+				r=mid;
 			}
 		}
-		for (int i = 0; i < nums.length; i++) {
-			if (nums[i] == target) {
-				j++;
-			}
+		int res = 0;
+		int t = nums[l] == target ? l : l + 1;
+		while (t < nums.length && nums[t] == target) {
+			res++;
+			t++;
+		}
+		if (l > l + res - 1) {
+			System.out.println("error");
+		}else {
+			System.out.println(l);
+			System.out.println(l + res - 1);
 		}
 
-		if (nums.length == 0 || (begin == 0 && end == 0)) {
-			return res2;
-		}
-		end = begin + j - 1;
+		return new int[]{0, 0};
 
-		int[] res = new int[2];
-		res[0] = begin;
-		res[1] = end;
-
-		return res;
 	}
 }
