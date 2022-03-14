@@ -7,7 +7,7 @@ package Leecode;
  */
 public class T38 {
 	public static void main(String[] args) {
-		System.out.println(countAndSay(5));
+		System.out.println(countAndSay(10));
 	}
 	public static String countAndSay(int n) {
 		if(n==1){return "1";}
