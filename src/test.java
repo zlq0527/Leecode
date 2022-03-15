@@ -2,6 +2,7 @@ import com.sun.org.apache.xpath.internal.operations.Bool;
 import jdk.jfr.Unsigned;
 
 import java.util.*;
+import java.util.concurrent.*;
 
 /**
  * @ Author     ：赵棱泉.
@@ -9,11 +10,10 @@ import java.util.*;
  * @ Description：
  */
 public class test {
-	public static void main(String[] args) {
-		String s1 = "abc";
-		String s2 = "ab";
-		String s3 = s2 + "c";
-		System.out.println(s1==s3);
+	public static void main(String[] args) throws ExecutionException, InterruptedException {
+		ExecutorService service = Executors.newFixedThreadPool(3);
+		service.shutdown();
+
 	}
 
 }
