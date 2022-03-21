@@ -1,4 +1,5 @@
-import java.util.Scanner;
+package Leecode;
+
 import java.util.Stack;
 
 /**

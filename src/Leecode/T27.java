@@ -3,7 +3,7 @@ package Leecode;
 import java.util.Arrays;
 
 /**
- * @ Author     ：赵棱泉.
+ * @ Author     ：zhaolengquan.
  * @ Date       ：Created in 11:48 2022/2/21
  * @ Description：
  */

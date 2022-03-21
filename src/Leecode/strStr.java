@@ -3,7 +3,7 @@ package Leecode;
 import java.util.Objects;
 
 /**
- * @ Author     ：赵棱泉.
+ * @ Author     ：zhaolengquan.
  * @ Date       ：Created in 21:45 2022/1/8
  * @ Description：实现 strStr() 函数。
  * <p>

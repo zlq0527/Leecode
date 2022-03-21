@@ -3,7 +3,7 @@ package Leecode;
 import java.util.Scanner;
 
 /**
- * @ Author     ：赵棱泉.
+ * @ Author     ：zhaolengquan.
  * @ Date       ：Created in 22:46 2022/2/18
  * @ Description：
  */

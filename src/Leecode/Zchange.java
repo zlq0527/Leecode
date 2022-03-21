@@ -1,7 +1,7 @@
 package Leecode;
 
 /**
- * @ Author     ：赵棱泉.
+ * @ Author     ：zhaolengquan.
  * @ Date       ：Created in 20:10 2022/2/16
  * @ Description：
  */

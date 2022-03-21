@@ -1,7 +1,7 @@
 package Leecode;
 
 /**
- * @ Author     ：赵棱泉.
+ * @ Author     ：zhaolengquan.
  * @ Date       ：Created in 17:18 2022/2/13
  * @ Description：力扣
  */

@@ -3,7 +3,7 @@ package Leecode;
 import java.util.Arrays;
 
 /**
- * @ Author     ：赵棱泉.
+ * @ Author     ：zhaolengquan.
  * @ Date       ：Created in 18:02 2022/2/18
  * @ Description：
  * 给你一个长度为 n 的整数数组 nums 和 一个目标值 target。请你从 nums 中选出三个整数，使它们的和与 target 最接近。

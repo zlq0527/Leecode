@@ -3,7 +3,7 @@ package Offer;
 import java.util.Scanner;
 
 /**
- * @ Author     ：赵棱泉.
+ * @ Author     ：zhaolengquan.
  * @ Date       ：Created in 20:17 2022/2/28
  * @ Description：
  */

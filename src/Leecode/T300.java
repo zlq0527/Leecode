@@ -3,7 +3,9 @@ package Leecode;
 import java.util.Arrays;
 
 /**
- * @ Author     ：赵棱泉. @ Date       ：Created in 21:15 2022/2/18 @ Description：
+ * @ Author     ：zhaolengquan.
+ * @ Date       ：Created in 21:15 2022/2/18
+ * @ Description：
  */
 public class T300 {
 	public static void main(String[] args) {

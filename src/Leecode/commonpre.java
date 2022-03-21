@@ -1,7 +1,7 @@
 package Leecode;
 
 /**
- * @ Author     ：赵棱泉.
+ * @ Author     ：zhaolengquan.
  * @ Date       ：Created in 17:56 2022/2/6
  * @ Description：最长公共前缀
  */

@@ -2,7 +2,6 @@ package Leecode;
 
 public class TargetObject {
 	private String value;
-
 	public TargetObject() {
 		value = "JavaGuide";
 	}

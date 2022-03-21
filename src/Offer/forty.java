@@ -3,7 +3,7 @@ package Offer;
 import java.util.Arrays;
 
 /**
- * @ Author     ：赵棱泉.
+ * @ Author     ：zhaolengquan.
  * @ Date       ：Created in 17:04 2022/2/13
  * @ Description：剑指offer40
  */
