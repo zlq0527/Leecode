@@ -19,7 +19,6 @@ public class of_04 {
 		int target = 10;
 		System.out.println(findNumberIn2DArray(num, target));
 	}
-
 	public static boolean findNumberIn2DArray(int[][] matrix, int target) {
 		if(matrix == null || matrix.length == 0) {
 			return false;
