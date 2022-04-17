@@ -5,7 +5,7 @@ import java.util.*;
  * @ Date       ：Created in 13:15 2022/2/27
  * @ Description：
  */
-public class test {
+public class test1 {
 	public static void main(String[] args) {
 		int[] num = new int[4];
 		Scanner scanner = new Scanner(System.in);
