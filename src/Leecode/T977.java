@@ -12,12 +12,21 @@ public class T977 {
 		}
 	}
 
-
 	public static int[] sortedSquares(int[] nums) {
-		for (int i = 0; i < nums.length; i++) {
-			nums[i] = nums[i] * nums[i];
+		int k = nums.length - 1;
+		int i = 0;
+		int j = nums.length - 1;
+		int[] result = new int[nums.length];
+		while (i <= j) {
+			if (nums[i] * nums[i] < nums[j] * nums[j]) {
+				result[k--] = nums[j] * nums[j];
+				j--;
+			} else {
+				result[k--] = nums[i] * nums[i];
+				i++;
+			}
 		}
-		Arrays.sort(nums);
 		return nums;
+
 	}
 }

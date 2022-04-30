@@ -6,6 +6,7 @@ import java.util.List;
 public class Leecode283 {
 	public static void main(String[] args) {
 		int[] a = new int[]{1, 2, 3, 0, 4, 5, 0, 7};
+//		int[] a = new int[]{0,0,0,0,1};
 		new Leecode283().moveZeroes(a);
 	}
 
@@ -24,22 +25,4 @@ public class Leecode283 {
 		}
 
 	}
-//    public void moveZeroes(int[] nums) {
-//        int aa=0;
-//        List<Integer> list=new ArrayList<>();
-//        for (int num : nums) {
-//            if (num != 0) {
-//                list.add(num);
-//            }else aa++;
-//        }
-//        while (aa--!=0){
-//            list.add(0);
-//        }
-//        Object []a=list.toArray();
-//        for (Object i : a) {
-//            System.out.println(i);
-//        }
-//
-//
-//    }
 }

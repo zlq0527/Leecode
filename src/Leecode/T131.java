@@ -6,11 +6,12 @@ import java.util.List;
 /**
  * @ Author     ：zhaolengquan.
  * @ Date       ：Created in 19:38 2022/3/2
- * @ Description：
+ * @ Description：分割回文串 T131
+ * https://leetcode-cn.com/problems/palindrome-partitioning/
  */
 public class T131 {
 	public static void main(String[] args) {
-		new T131().partition("aab");
+		new T131().partition("baa");
 	}
 	List<List<String>> list = new ArrayList<>();
 	List<String> list1 = new ArrayList<>();
@@ -20,19 +21,19 @@ public class T131 {
 		return list;
 	}
 
-	public void backtrace(String s, int i) {
-		if (i >= s.length()) {
+	public void backtrace(String s, int index) {
+		if (index >= s.length()) {
 			list.add(new ArrayList<>(list1));
 			return;
 		}
-		for (int j = i; j < s.length(); j++) {
-			if (isPalindrome(s, i, j)) {
-				String str = s.substring(i, j + 1);
+		for (int j = index; j < s.length(); j++) {
+			if (isPalindrome(s, index, j)) {
+				String str = s.substring(index, j + 1);
 				list1.add(str);
 			} else {
 				continue;
 			}
-			backtrace(s, i + 1);
+			backtrace(s, j + 1);
 			list1.remove(list1.size() - 1);
 		}
 	}

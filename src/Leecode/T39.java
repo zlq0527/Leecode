@@ -8,8 +8,8 @@ import java.util.*;
 public class T39 {
 	static List<List<Integer>> list = new ArrayList<>();
 	public static void main(String[] args) {
-		int[] nums = new int[]{10, 1, 2, 7, 6, 1, 5};
-		System.out.println(combinationSum(nums, 8));
+		int[] nums = new int[]{5,2,12,3,4,1,12};
+		System.out.println(combinationSum(nums, 7));
 	}
 	public static List<List<Integer>> combinationSum(int[] candidates, int target) {
 		List<Integer> list2 = new ArrayList<>();
