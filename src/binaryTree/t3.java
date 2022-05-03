@@ -1,9 +1,6 @@
 package binaryTree;
 
-import java.util.ArrayList;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Queue;
+import java.util.*;
 
 /**
  * @ Author     ：zhaolengquan.
@@ -42,6 +39,7 @@ public class t3 {
 		}
 		Queue<TreeNode> queue = new LinkedList<>();
 		queue.offer(node);
+		//第一种解法
 		while (!queue.isEmpty()) {
 			int len = queue.size();
 			while (len > 0) {
@@ -56,6 +54,22 @@ public class t3 {
 				len--;
 			}
 			list2.add(list.get(list.size() - 1));
+		}
+
+		//第二种解法
+		while (!queue.isEmpty()) {
+			TreeNode temp = queue.poll();
+			for (int i = 0; i < queue.size(); i++) {
+				if (temp.left != null) {
+					queue.add(temp.left);
+				}
+				if (temp.right != null) {
+					queue.add(temp.right);
+				}
+				if (i == queue.size() - 1) {
+					list.add(temp.val);
+				}
+			}
 		}
 	}
 
