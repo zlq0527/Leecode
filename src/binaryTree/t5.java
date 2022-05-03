@@ -25,9 +25,11 @@ public class t5 {
 		}
 
 	}
-
 	public List<List<Integer>> levelOrder(Node root) {
 		List<List<Integer>> list = new ArrayList<>();
+		if (root == null) {
+			return list;
+		}
 		Deque<Node> deque = new LinkedList<>();
 		deque.offer(root);
 		while (!deque.isEmpty()) {
