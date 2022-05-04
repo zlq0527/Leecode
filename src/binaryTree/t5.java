@@ -33,6 +33,7 @@ public class t5 {
 		Deque<Node> deque = new LinkedList<>();
 		deque.offer(root);
 		while (!deque.isEmpty()) {
+			//保存每层节点值的List需要在while循环里新建,相当于每一层都是一个新的List!
 			List<Integer> list1 = new ArrayList<>();
 			int len = deque.size();
 			for (int i = 0; i < len; i++) {
